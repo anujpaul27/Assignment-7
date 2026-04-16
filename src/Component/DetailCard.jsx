@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { toast } from 'react-toastify';
 
 const DetailCard = () => {
     const [friends, setFriends] = useState([])
     const [loading, setLoading] = useState(true)
     const { details_friend } = useParams()
+
     useEffect(() => {
         fetch('Friends.json')
             .then(res => res.json())
@@ -15,6 +17,10 @@ const DetailCard = () => {
             .catch(error => console.log(error.message))
 
     }, [])
+
+    const notify = () => toast("Your Call Success!..");
+    const notify1 = () => toast("Your Text Send Success!..");
+    const notify2 = () => toast("Your Video Send Success!..");
 
     const showTag = (ar) => {
         return ar.map((value, index) => (
@@ -144,15 +150,24 @@ const DetailCard = () => {
                                 <div className="card bg-gray-700   p-6">
                                     <h3 className="font-semibold mb-4 text-base-content/80">Quick Check-In</h3>
                                     <div className="grid grid-cols-3 gap-4">
-                                        <button onClick={() => CallSave(friends[details_friend])} className="btn btn-ghost bg-gray-700  flex flex-col h-20 ">
+                                        <button onClick={() => {
+                                            CallSave(friends[details_friend]);
+                                            notify();
+                                        } } className="btn btn-ghost bg-gray-700  flex flex-col h-20 ">
                                             <p className="text-xl">📞</p>
                                             <p className="text-xs">Call</p>
                                         </button>
-                                        <button onClick={() => TextSave(friends[details_friend])} className="btn btn-ghost bg-gray-700  flex flex-col h-20 ">
+                                        <button onClick={() =>{
+                                            TextSave(friends[details_friend]);
+                                            notify1();
+                                        } } className="btn btn-ghost bg-gray-700  flex flex-col h-20 ">
                                             <p className="text-xl">💬</p>
                                             <p className="text-xs">Text</p>
                                         </button>
-                                        <button onClick={() => VideoSave(friends[details_friend])} className="btn btn-ghost bg-gray-700  flex flex-col h-20 ">
+                                        <button onClick={() => {
+                                            VideoSave(friends[details_friend]);
+                                            notify2()
+                                        }} className="btn btn-ghost bg-gray-700  flex flex-col h-20 ">
                                             <p className="text-xl">📹</p>
                                             <p className="text-xs">Video</p>
                                         </button>
