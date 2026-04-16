@@ -1,16 +1,20 @@
-# React + Vite
+# KinKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an amazing project that solves Friends managing problems. In this README, you will find essential information about the project, including its features and technology stack.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is designed to provide solutions in a unique way, leveraging various technologies to ensure efficiency and effectiveness.
 
-## React Compiler
+## Technology Stack
+- JavaScript
+- Tailwind CSS & Daisyui 
+- React Toastify
+- React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
+1. **Feature 1**: User-friendly interface that enhances user experience. 
+2. **Feature 2**: Provides Manage and Rending user and frineds From JSON Data.
+3. **Feature 3**: Add to call text  and video history timeline . 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Thank you for checking out my project!
