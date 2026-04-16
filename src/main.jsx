@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import ForRoute from './Component/ForRoute.jsx'
 import DetailCard from './Component/DetailCard.jsx'
 import Timeline from './Component/Timeline.jsx'
+import Starts from './Component/Starts.jsx'
+import NotFound from './Component/NotFound.jsx'
 
 
 const router = createBrowserRouter([
@@ -24,8 +26,17 @@ const router = createBrowserRouter([
       {
         path: '/timeline',
         element: <Timeline />
-      }
+      },
+      {
+        path: '/starts',
+        element: <Starts/>
+      },
+      
     ]
+  },
+  {
+    path:'*',
+    element: <NotFound/>
   }
 ])
 

@@ -10,7 +10,7 @@ const Navbar = () => {
                 <ul className="menu flex gap-2  menu-horizontal px-1">
                     <li><Link to={'/'} className='btn btn-outline lg:btn-md md:btn-sm btn-xs  '>Home</Link  ></li>
                     <li><Link to={'/timeline'} className='btn btn-outline lg:btn-md md:btn-sm btn-xs  '>Timeline</Link  ></li>
-                    <li><button className='btn btn-outline lg:btn-md md:btn-sm btn-xs  '>Stats</button ></li>
+                    <li><Link to={'/starts'} className='btn btn-outline lg:btn-md md:btn-sm btn-xs  '>Stats</Link ></li>
                 </ul>
             </div>
         </div>

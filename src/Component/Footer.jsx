@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center bg-gray-700  text-base-content mt-5  p-10">
       <nav >
-       <h1 className='text-5xl '>KeenKeeper </h1>
+       <h1 className='lg:text-5xl text-2xl'>KeenKeeper </h1>
        <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
       </nav>
       <nav>
